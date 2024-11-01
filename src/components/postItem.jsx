@@ -4,7 +4,8 @@ const PostItem = (props) => {
     const params = useParams();
     const location = useLocation();
 
-    console.log(location);
+    console.log(location.pathname);
+    console.log(params.id);
 
     return (
         <>
