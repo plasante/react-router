@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Navigate } from "react-router-dom";
 
 const Profile = () => {
     const navigate = useNavigate();
@@ -7,6 +7,7 @@ const Profile = () => {
         <>
             <div>Profile</div>
             <button onClick={() => navigate('/')} className="btn btn-primary">Back Home</button>
+            <Navigate replace to={'/'}/>
         </>
     )
 }
